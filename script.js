@@ -50,4 +50,10 @@ btn.style.transform="scale(1)";
 
 });
 
+// MENU MOBILE
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
 
