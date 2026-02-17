@@ -10,7 +10,6 @@ body {
     transition:0.3s;
 }
 
-/* dark mode */
 .dark {
     background:#111;
     color:white;
@@ -19,31 +18,29 @@ body {
 header {
     display:flex;
     justify-content:space-between;
-    padding:15px;
+    align-items:center;
+    padding:15px 30px;
     background:#667eea;
     color:white;
 }
 
 nav a {
-    margin:10px;
+    margin-left:15px;
     color:white;
     text-decoration:none;
+    font-weight:bold;
 }
 
 .container {
-    display: flex;              /* 👈 ativa o flexbox */
-    flex-direction: column;     /* coloca itens em coluna (vertical) */
-    justify-content: center;    /* centraliza verticalmente */
-    align-items: center;        /* centraliza horizontalmente */
-
-    text-align: center;
-    margin-top: 100px;
-    gap: 20px;                  /* espaço automático entre elementos */
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    margin-top:100px;
+    gap:20px;
     animation: fade 0.7s ease;
 }
-
-
 
 .btn {
     background:#667eea;
@@ -51,6 +48,11 @@ nav a {
     padding:12px 20px;
     border-radius:8px;
     text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover {
+    transform:scale(1.05);
 }
 
 @keyframes fade {
@@ -63,3 +65,4 @@ nav a {
         transform:translateY(0);
     }
 }
+
